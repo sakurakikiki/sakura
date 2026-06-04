@@ -1,0 +1,110 @@
+@import 'https://unpkg.com/open-props';
+@import 'https://unpkg.com/open-props/normalize.min.css';
+@import 'https://unpkg.com/open-props/buttons.min.css';
+
+:root {
+  font-family: var(--font-sans);
+  color: var(--text-1);
+  background: var(--surface-1);
+}
+
+body {
+  min-block-size: 100vh;
+  background:
+    radial-gradient(circle at top left, hsl(var(--indigo-4-hsl) / 35%), transparent 32rem),
+    radial-gradient(circle at bottom right, hsl(var(--pink-4-hsl) / 28%), transparent 30rem),
+    var(--surface-1);
+}
+
+.app-shell {
+  inline-size: min(100% - var(--size-6), var(--size-content-3));
+  margin-inline: auto;
+  padding-block: var(--size-8);
+  display: grid;
+  gap: var(--size-6);
+}
+
+.hero-card,
+.token-grid article {
+  border: var(--border-size-1) solid var(--surface-3);
+  border-radius: var(--radius-4);
+  background: hsl(var(--surface-2-hsl) / 82%);
+  box-shadow: var(--shadow-4);
+}
+
+.hero-card {
+  padding: var(--size-fluid-5);
+  display: grid;
+  gap: var(--size-4);
+}
+
+.eyebrow {
+  color: var(--indigo-6);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-7);
+  letter-spacing: var(--font-letterspacing-3);
+  text-transform: uppercase;
+}
+
+h1 {
+  max-inline-size: var(--size-header-2);
+  font-size: var(--font-size-fluid-3);
+  line-height: var(--font-lineheight-0);
+}
+
+.hero-copy {
+  max-inline-size: var(--size-content-2);
+  color: var(--text-2);
+  font-size: var(--font-size-fluid-1);
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-3);
+}
+
+.button.primary {
+  color: var(--gray-0);
+  background: var(--indigo-7);
+  border-color: var(--indigo-7);
+}
+
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--size-4);
+}
+
+.token-grid article {
+  padding: var(--size-4);
+  display: grid;
+  gap: var(--size-3);
+}
+
+.token-grid h2 {
+  font-size: var(--font-size-4);
+}
+
+.token-grid p {
+  color: var(--text-2);
+}
+
+.swatch {
+  inline-size: var(--size-8);
+  block-size: var(--size-8);
+  border-radius: var(--radius-3);
+}
+
+.swatch.gradient {
+  background: var(--gradient-9);
+}
+
+.swatch.shadow {
+  background: var(--surface-1);
+  box-shadow: var(--shadow-4);
+}
+
+.swatch.color {
+  background: var(--indigo-6);
+}
