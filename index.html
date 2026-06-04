@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Sakura Open Props</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card" aria-labelledby="page-title">
+        <p class="eyebrow">Open Props configured</p>
+        <h1 id="page-title">Sakura 已接入 Open Props</h1>
+        <p class="hero-copy">
+          项目现在可以直接使用 Open Props 提供的颜色、间距、阴影、圆角、动画与排版 CSS 变量。
+        </p>
+        <div class="action-row">
+          <a class="button primary" href="https://open-props.style/" target="_blank" rel="noreferrer">查看文档</a>
+          <a class="button" href="#tokens">查看示例 tokens</a>
+        </div>
+      </section>
+
+      <section id="tokens" class="token-grid" aria-label="Open Props token examples">
+        <article>
+          <span class="swatch gradient"></span>
+          <h2>渐变</h2>
+          <p>使用 <code>var(--gradient-9)</code> 快速创建品牌背景。</p>
+        </article>
+        <article>
+          <span class="swatch shadow"></span>
+          <h2>阴影</h2>
+          <p>使用 <code>var(--shadow-4)</code> 与圆角 token 搭配卡片。</p>
+        </article>
+        <article>
+          <span class="swatch color"></span>
+          <h2>颜色</h2>
+          <p>使用 <code>var(--indigo-6)</code> 等语义化色阶。</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
